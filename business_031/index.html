@@ -3,10 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700;900&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
 <title>Historic Route 66 Motel — Seligman, AZ | Independent motel</title>
 <meta name="description" content="Historic Route 66 Motel in Seligman, AZ. Historic Route 66 Motel is an independent 16-unit motel on Route 66 in Seligman, Arizona, listed with free Wi-Fi, refrigerators and coffee pots in rooms, and a studio apartment for longer stays.">
-<style>:root{--primary:#191919;--secondary:#E9D8B9;--accent:#C56A35} *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Inter,system-ui,Arial,sans-serif;color:#1d1a16;background:var(--secondary);line-height:1.65;font-size:17px}
+<style>:root{--primary:#1E1420;--secondary:#F7F1E8;--accent:#FF4D6D} *{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Manrope',system-ui,Arial,sans-serif;color:#1d1a16;background:var(--secondary);line-height:1.65;font-size:17px}
 a{color:inherit}
 .container{max-width:1200px;margin-inline:auto;padding-inline:40px}
 @media(min-width:1440px){.container{max-width:1320px}}
@@ -68,6 +71,22 @@ footer a{color:var(--accent)}
 html,body{overflow-x:clip}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
 a:focus-visible,.btn:focus-visible{outline:3px solid currentColor;outline-offset:3px}
+
+/* GLOW SYSTEM 2026-10-31 — energetic 3-colour glow, premium type */
+h1,h2,h3,.brand{font-family:'Fraunces',Georgia,serif;letter-spacing:-.01em}
+h1{font-weight:900}
+h2{font-weight:700}
+h1 .acc{color:var(--accent);text-shadow:0 0 18px var(--accent),0 0 42px var(--accent);animation:glowPulse 3.2s ease-in-out infinite}
+@keyframes glowPulse{0%,100%{text-shadow:0 0 14px var(--accent),0 0 34px var(--accent)}50%{text-shadow:0 0 26px var(--accent),0 0 58px var(--accent)}}
+.btn{position:relative;overflow:hidden;box-shadow:0 0 0 1px var(--accent),0 6px 28px var(--accent);transition:transform .25s ease,box-shadow .25s ease}
+.btn:hover{transform:translateY(-3px);box-shadow:0 0 0 1px var(--accent),0 10px 38px var(--accent)}
+.btn::after{content:'';position:absolute;top:0;left:-80%;width:50%;height:100%;background:linear-gradient(105deg,transparent,rgba(255,255,255,.55),transparent);transform:skewX(-20deg);animation:shine 3.8s ease-in-out infinite}
+@keyframes shine{0%,60%{left:-80%}100%{left:130%}}
+.progress{background:linear-gradient(90deg,var(--accent),#fff);box-shadow:0 0 12px var(--accent);height:5px}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(0,0,0,.22),0 0 0 2px var(--accent),0 0 24px var(--accent)}
+.hero figure img{animation:kenBurns 18s ease-in-out infinite alternate}
+@keyframes kenBurns{from{transform:scale(1)}to{transform:scale(1.08)}}
+.eyebrow{font-family:'Manrope',system-ui,sans-serif;font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);font-weight:800;margin-bottom:12px}
 </style>
 </head>
 <body>
@@ -83,11 +102,11 @@ a:focus-visible,.btn:focus-visible{outline:3px solid currentColor;outline-offset
 <section id="stay" class="dark"><div class="container"><h2 class="reveal">Stay</h2><p class="sub reveal">Stay options as listed in the sources checked. No prices are shown — no room rates were verified.</p><div class="grid"><div class="card"><img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=1920&auto=format&fit=crop" alt="Motel room" loading="lazy"><div class="card-body"><h3>Rooms with 1 or 2 queen beds</h3><p>Rooms with 1 or 2 queen beds, free Wi-Fi, a refrigerator and a coffee pot, as listed.</p><p style="margin-top:8px;font-size:13px;color:#6b6156">Hotel bedroom — illustrative stock photo, not this property's actual room.</p></div></div><div class="card"><img src="https://images.unsplash.com/photo-1591088398332-8a7791972843?q=80&w=1920&auto=format&fit=crop" alt="Room with desk" loading="lazy"><div class="card-body"><h3>Studio apartment for longer stays</h3><p>A studio apartment for long-term stays, as listed on the Seligman Chamber page.</p><p style="margin-top:8px;font-size:13px;color:#6b6156">Hotel room with desk — illustrative stock photo, not this property's actual room.</p></div></div><div class="card"><img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?q=80&w=1920&auto=format&fit=crop" alt="Open-plan suite" loading="lazy"><div class="card-body"><h3>Smoke-free, exterior corridors</h3><p>A smoke-free, one-storey motel with exterior corridors, as listed by AAA.</p><p style="margin-top:8px;font-size:13px;color:#6b6156">Open-plan modern suite — illustrative stock photo, not this property's actual room.</p></div></div></div></div></section>
 <section id="amenities"><div class="container"><h2 class="reveal">Amenities</h2><p class="sub reveal">Amenities exactly as listed in the sources checked — nothing added.</p><ul class="why"><li><strong>Free Wi-Fi, as listed</strong></li><li><strong>Refrigerator and coffee pot in rooms, as listed</strong></li><li><strong>10% discount at local restaurants with room key, as listed</strong></li><li><strong>Studio apartment for long-term stays, as listed</strong></li><li><strong>Smoke-free property, as listed</strong></li><li><strong>Exterior corridors, one storey, 16 units, as listed</strong></li><li><strong>Pets not accepted in guest rooms, as listed</strong></li><li><strong>Next door to Roadkill Cafe, as listed</strong></li></ul></div></section>
 <section id="about" class="dark"><div class="container split"><div><h2 class="reveal">About this stay</h2><p class="reveal">Built in the early 1960s as the Navajo Motel, Historic Route 66 Motel sits on Route 66 in Seligman, next door to Roadkill Cafe. The chamber listing describes a classic roadside stop with rooms, a long-stay studio apartment, and a restaurant discount for guests showing a room key.</p></div><figure class="reveal"><img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=1920&auto=format&fit=crop" alt="Classic hotel bedroom — illustrative stock photo, not this property's actual room." loading="lazy"><figcaption>Classic hotel bedroom — illustrative stock photo, not this property's actual room.</figcaption></figure></div></section>
-<section id="gallery"><div class="container"><h2 class="reveal">Gallery</h2><p class="sub reveal">Illustrative stock photos only. These are concept images, not photos of Historic Route 66 Motel.</p><div class="grid"><div class="card"><img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?q=80&w=1920&auto=format&fit=crop" alt="Illustrative stock photo" loading="lazy"><div class="card-body"><p>Warm wood hotel room — illustrative stock photo, not this property.</p></div></div><div class="card"><img src="https://images.unsplash.com/photo-1591088398332-8a7791972843?q=80&w=1920&auto=format&fit=crop" alt="Illustrative stock photo" loading="lazy"><div class="card-body"><p>Hotel room with desk — illustrative stock photo, not this property's actual room.</p></div></div><div class="card"><div class="placeholder">No verified photo for a further gallery feature — no stock image substituted here.</div><div class="card-body"><p>Gallery photos are illustrative stock only, never this property's own photos.</p></div></div></div></div></section>
+<section id="gallery"><div class="container"><h2 class="reveal">Gallery</h2><p class="sub reveal">Illustrative stock photos only. These are concept images, not photos of Historic Route 66 Motel.</p><div class="grid"><div class="card"><img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?q=80&w=1920&auto=format&fit=crop" alt="Illustrative stock photo" loading="lazy"><div class="card-body"><p>Warm wood hotel room — illustrative stock photo, not this property.</p></div></div><div class="card"><img src="https://images.unsplash.com/photo-1591088398332-8a7791972843?q=80&w=1920&auto=format&fit=crop" alt="Illustrative stock photo" loading="lazy"><div class="card-body"><p>Hotel room with desk — illustrative stock photo, not this property's actual room.</p></div></div><div class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1920&auto=format&fit=crop" alt="Exterior view — illustrative stock photo, not this property's own." loading="lazy"></div><div class="card-body"><p>Gallery photos are illustrative stock only, never this property's own photos.</p></div></div></div></div></section>
 <section><div class="container"><h2 class="reveal">Why stay here</h2><ul class="why"><li><strong>On Route 66</strong>On Historic Route 66 in Seligman, as listed.</li><li><strong>Long-stay studio</strong>A studio apartment is listed for longer stays.</li><li><strong>Restaurant discount with room key</strong>A 10% discount at local restaurants with a room key, as listed.</li></ul></div></section>
 <section id="visit" class="dark"><div class="container split"><div><h2 class="reveal">Visit &amp; contact</h2><p class="sub reveal">22750 W Hwy 66, Seligman, AZ 86337</p><p style="margin-bottom:16px"><a href="tel:+19284223204">928-422-3204</a> &middot; <a href="mailto:route66motelseligmanaz@gmail.com">route66motelseligmanaz@gmail.com</a> &middot; <a href="https://www.google.com/maps/search/?api=1&query=Historic%20Route%2066%20Motel%2022750%20W%20Hwy%2066%2C%20Seligman%2C%20AZ%2086337">Find on Google Maps</a></p><div class="cta-row"><a class="btn" href="tel:+19284223204">Call</a><a class="btn btn-dark" href="mailto:route66motelseligmanaz@gmail.com">Email</a></div></div><div><h2 style='font-size:26px'>Hours</h2><table class="hours"><tr><td>Check-in</td><td>3:00 PM, as listed</td></tr><tr><td>Check-out</td><td>11:00 AM, as listed</td></tr></table><p class="note">Pets are not accepted in guest rooms, as listed.</p></div></div></section>
 <section class="final"><div class="container"><h2 class="reveal">Plan your stay at Historic Route 66 Motel</h2><p class="sub reveal" style="margin-inline:auto">Call or email the property directly — no booking is made through this concept demo.</p><div class="cta-row"><a class="btn" href="tel:+19284223204">Call 928-422-3204</a><a class="btn btn-dark" href="mailto:route66motelseligmanaz@gmail.com">Email the property</a></div></div></section>
-<footer><div class="container"><p>Historic Route 66 Motel &middot; 22750 W Hwy 66, Seligman, AZ 86337 &middot; <a href="tel:+19284223204">928-422-3204</a> &middot; <a href="mailto:route66motelseligmanaz@gmail.com">route66motelseligmanaz@gmail.com</a></p><p style="margin-top:12px">Website concept demo — not the official website</p><p style="margin-top:12px;font-size:13px">Concept imagery: licensed stock photos labelled illustrative, never this property's own photos. Animation: GSAP 3.13.0 via CDN, restrained, with a full reduced-motion guard.</p></div></footer>
+<footer><div class="container"><p>Historic Route 66 Motel &middot; 22750 W Hwy 66, Seligman, AZ 86337 &middot; <a href="tel:+19284223204">928-422-3204</a> &middot; <a href="mailto:route66motelseligmanaz@gmail.com">route66motelseligmanaz@gmail.com</a></p><p style="margin-top:12px">Website concept demo — not the official website</p><p style="margin-top:12px;font-size:13px">Concept imagery: licensed stock photos labelled illustrative, never this property's own photos. Animation: GSAP 3.13.0 via CDN (glow system), with a full reduced-motion guard.</p></div></footer>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
 <script>
@@ -96,11 +115,18 @@ a:focus-visible,.btn:focus-visible{outline:3px solid currentColor;outline-offset
   if (reduced) return;
   if (typeof gsap === 'undefined') return;
   gsap.registerPlugin(ScrollTrigger);
-  gsap.from('header .brand, .hero h1, .hero .lede, .hero .cta-row', {opacity:0, y:24, duration:0.7, stagger:0.08, ease:'power2.out'});
+  gsap.timeline({defaults:{ease:'power3.out'}})
+    .from('header .brand', {opacity:0, y:-16, duration:.6})
+    .from('.hero h1', {opacity:0, y:34, duration:.8}, '-=.3')
+    .from('.hero .lede, .hero .sub', {opacity:0, y:22, duration:.7, stagger:.1}, '-=.4')
+    .from('.hero .cta-row', {opacity:0, y:18, duration:.6}, '-=.35')
+    .from('.hero figure', {opacity:0, scale:.96, duration:.9}, '-=.6');
   gsap.to('#progress', {width:'100%', ease:'none', scrollTrigger:{trigger:document.body, start:'top top', end:'bottom bottom', scrub:0.3}});
-  var reveals = gsap.utils.toArray('.reveal');
-  reveals.forEach(function(el){
-    gsap.from(el, {opacity:0, y:24, duration:0.7, ease:'power2.out', scrollTrigger:{trigger:el, start:'top 88%', once:true}});
+  gsap.utils.toArray('.reveal').forEach(function(el){
+    gsap.from(el, {opacity:0, y:30, duration:.8, ease:'power2.out', scrollTrigger:{trigger:el, start:'top 88%', once:true}});
+  });
+  gsap.utils.toArray('.card').forEach(function(el){
+    gsap.from(el, {opacity:0, y:28, scale:.98, duration:.7, ease:'power2.out', scrollTrigger:{trigger:el, start:'top 90%', once:true}});
   });
 })();
 </script>
